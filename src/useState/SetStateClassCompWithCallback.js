@@ -19,19 +19,19 @@ class SetStateFunctionalWithCallback extends Component {
     }
 
     clickCallback() {
-        this.setState((previousState) => {
+        this.setState((previousState, currentProps) => {
             return { clickCount: previousState.clickCount + 1 }
         }, this.finishedCallback);
 
-        this.setState((previousState) => {
+        this.setState((previousState, currentProps) => {
             return { clickCount: previousState.clickCount + 1 }
         }, this.finishedCallback);
 
-        this.setState((previousState) => {
+        this.setState((previousState, currentProps) => {
             return { switch: !previousState.switch }
         }, this.finishedCallback)
 
-        this.setState((previousState) => {
+        this.setState((previousState, currentProps) => {
             return { clickCount: previousState.clickCount + 1 }
         }, this.finishedCallback);
     }
