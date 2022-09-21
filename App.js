@@ -6,12 +6,13 @@ import React from "react";
 // import SetStateClassCompWithCallback from "./src/useState/SetStateClassCompWithCallback";
 // import UseEffectCompMount from "./src/useEffect/UseEffectCompMount";
 // import UseEffectCompEveryStateUpdate from "./src/useEffect/UseEffectCompEveryStateUpdate";
-import UseEffectCompDependency from "./src/useEffect/UseEffectCompDependency";
+// import UseEffectCompDependency from "./src/useEffect/UseEffectCompDependency";
+import UseEffectCompUnmount from "./src/useEffect/unmount/UseEffectCompUnmount";
 
 const App = () => {
     return (
         <div>
-            <UseEffectCompDependency />
+            <UseEffectCompUnmount />
         </div>
     );
 };
