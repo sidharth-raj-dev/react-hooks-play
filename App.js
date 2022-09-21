@@ -5,12 +5,13 @@ import React from "react";
 // import SetStateFunctionalBatched from "./src/useState/SetStateFunctionalBatched";
 // import SetStateClassCompWithCallback from "./src/useState/SetStateClassCompWithCallback";
 // import UseEffectCompMount from "./src/useEffect/UseEffectCompMount";
-import UseEffectCompEveryStateUpdate from "./src/useEffect/UseEffectCompEveryStateUpdate";
+// import UseEffectCompEveryStateUpdate from "./src/useEffect/UseEffectCompEveryStateUpdate";
+import UseEffectCompDependency from "./src/useEffect/UseEffectCompDependency";
 
 const App = () => {
     return (
         <div>
-            <UseEffectCompEveryStateUpdate />
+            <UseEffectCompDependency />
         </div>
     );
 };

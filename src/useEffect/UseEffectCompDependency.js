@@ -1,14 +1,18 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-function UseEffectCompEveryStateUpdate() {
+// below useEffect will run after 
+// component mount and
+// when any of its dependency state changes
+function UseEffectCompDependency() {
     const [clickCount, setClickCount] = useState(0);
     const [toggle, setToggle] = useState(false);
 
+    // below useEffect gets called when state of toggle variable changes
     useEffect(() => {
         console.log('clickCount value is ' + clickCount);
         console.log('toggle value is ' + toggle);
-    });
+    }, [toggle]);
 
     function clickCallback() {
         setClickCount(clickCount + 1);
@@ -23,10 +27,10 @@ function UseEffectCompEveryStateUpdate() {
             <button onClick={clickCallback}> Increment Button </button>
             <button onClick={toggleCallback}> Toggle </button>
             <div> {`clickcount state-> `} {clickCount} </div>
-            <div> {`toggle state-> `} {toggle} </div>
-            <div>Check console for message after every state update</div>
+            <div> {`toggle state-> `} {toggle.toString()} </div>
+            <div>Check console for message after toggle state update</div>
         </>
     );
 }
 
-export default UseEffectCompEveryStateUpdate;
+export default UseEffectCompDependency;
