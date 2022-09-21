@@ -7,12 +7,14 @@ import React from "react";
 // import UseEffectCompMount from "./src/useEffect/UseEffectCompMount";
 // import UseEffectCompEveryStateUpdate from "./src/useEffect/UseEffectCompEveryStateUpdate";
 // import UseEffectCompDependency from "./src/useEffect/UseEffectCompDependency";
-import UseEffectCompUnmount from "./src/useEffect/unmount/UseEffectCompUnmount";
+// import UseEffectCompUnmount from "./src/useEffect/unmount/UseEffectCompUnmount";
+// import UseContextDirect from "./src/useContext/UseContextDirect";
+import UseContextWithProvider from "./src/useContext/UseContextWithProvider";
 
 const App = () => {
     return (
         <div>
-            <UseEffectCompUnmount />
+            <UseContextWithProvider />
         </div>
     );
 };
