@@ -3,12 +3,13 @@ import React from "react";
 // import SetStateBatchingBehaviour from "./src/useState/SetStateBatchingBehaviour";
 // import SetStateFunctional from "./src/useState/SetStateFunctional";
 // import SetStateFunctionalBatched from "./src/useState/SetStateFunctionalBatched";
-import SetStateClassCompWithCallback from "./src/useState/SetStateClassCompWithCallback";
+// import SetStateClassCompWithCallback from "./src/useState/SetStateClassCompWithCallback";
+import UseEffectCompMount from "./src/useEffect/UseEffectCompMount";
 
 const App = () => {
     return (
         <div>
-            <SetStateClassCompWithCallback />
+            <UseEffectCompMount />
         </div>
     );
 };
